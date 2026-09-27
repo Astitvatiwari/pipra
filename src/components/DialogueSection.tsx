@@ -22,11 +22,9 @@ export default function DialogueSection() {
             How can we enable the world to experience India?
           </h2>
 
-          <p className="font-sans text-pipra-silt mt-8 sm:mt-10 text-lg sm:text-xl md:text-2xl leading-relaxed reading-width">
-            Pipra is beginning with food, but the larger inquiry reaches
-            further: how can traditional knowledge become accessible,
-            trusted, desirable, and economically valuable without losing the
-            context that gives it meaning?
+          <p className="font-sans text-pipra-silt mt-6 sm:mt-8 text-lg sm:text-xl md:text-2xl leading-relaxed reading-width">
+            Beginning with food, we invite collaborators to build the infrastructure
+            that allows traditional knowledge to travel without losing its integrity.
           </p>
         </div>
 
@@ -98,9 +96,8 @@ export default function DialogueSection() {
               </div>
               <div className="lg:col-span-7">
                 <p className="font-sans text-pipra-silt text-base sm:text-lg leading-relaxed">
-                  Pipra Lab is a space for research, experimentation, and
-                  questions about food, culture, nutrition, knowledge, and the
-                  systems that connect them.
+                  A collaborative research initiative exploring foodways, nutrition,
+                  and the systems that connect them.
                 </p>
               </div>
             </div>

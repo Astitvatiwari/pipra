@@ -1,11 +1,11 @@
 import Image from "next/image";
 
 const STAGES = [
-  { step: "01", name: "Tradition" },
-  { step: "02", name: "Inquiry" },
-  { step: "03", name: "Experiment" },
-  { step: "04", name: "Evidence" },
-  { step: "05", name: "Scale" },
+  { step: "01", name: "Tradition", summary: "Ancestral inheritance and living memory." },
+  { step: "02", name: "Inquiry", summary: "Deconstructing sourcing, hygiene, and technique." },
+  { step: "03", name: "Experiment", summary: "Controlled culinary and operational testing." },
+  { step: "04", name: "Evidence", summary: "Documented standards, nutrition, and safety." },
+  { step: "05", name: "Scale", summary: "Sustainable distribution to a wider table." },
 ];
 
 export default function MethodSection() {
@@ -33,10 +33,8 @@ export default function MethodSection() {
           <div className="mt-8 sm:mt-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
             <div className="lg:col-span-7">
               <p className="font-sans text-pipra-silt text-base sm:text-lg leading-relaxed reading-width">
-                How does Pipra approach the challenge of allowing traditional food
-                knowledge to travel? By establishing a deliberate pathway from
-                ancestral inheritance to rigorous inquiry, controlled testing,
-                and verified evidence—eventually building the infrastructure for scale.
+                A disciplined progression from ancestral inheritance to rigorous testing,
+                verified evidence, and sustainable distribution.
               </p>
             </div>
 
@@ -93,6 +91,9 @@ export default function MethodSection() {
                     <h3 className="font-serif text-2xl sm:text-2xl lg:text-3xl text-pipra-charcoal group-hover:text-pipra-terracotta transition-editorial font-normal tracking-tight">
                       {stage.name}
                     </h3>
+                    <p className="font-sans text-xs text-pipra-silt mt-2 leading-relaxed">
+                      {stage.summary}
+                    </p>
                   </div>
                 </div>
               );
@@ -118,6 +119,9 @@ export default function MethodSection() {
                   <h3 className="font-serif text-2xl text-pipra-charcoal font-normal tracking-tight">
                     {stage.name}
                   </h3>
+                  <p className="font-sans text-xs text-pipra-silt mt-1 leading-relaxed">
+                    {stage.summary}
+                  </p>
                 </div>
               </div>
             ))}

@@ -29,11 +29,9 @@ export default function ThesisSection() {
             <div className="lg:col-span-7">
               <p className="font-sans text-pipra-silt text-lg sm:text-xl leading-relaxed reading-width">
                 India possesses an extraordinary inheritance of culinary knowledge,
-                regional ingredients, agricultural practices, and localized nutritional
-                wisdom. Yet, much of this wisdom remains confined to its geography of
-                origin. Pipra exists to explore how India’s traditional food systems
-                can become globally accessible, trusted, desirable, and economically
-                valuable—scaling infrastructure, not sameness.
+                yet much of it remains confined to its region of origin. Pipra builds
+                the systems that allow these traditions to become globally accessible,
+                trusted, and economically valuable.
               </p>
             </div>
 
@@ -67,15 +65,11 @@ export default function ThesisSection() {
             </div>
 
             <blockquote className="font-serif text-2xl sm:text-3xl md:text-[2.1rem] text-pipra-charcoal leading-[1.25] font-normal">
-              &ldquo;This survey is an effort to do for India’s fish sector what AMUL
-              did for the milk sector. Please take a few minutes to complete it
-              and help us contribute to India’s nutritional security. India continues
-              to face widespread protein and micronutrient deficiencies, and we
-              believe that making nutritious, affordable, and accessible fish
-              available at scale can be part of the solution.&rdquo;
+              &ldquo;An effort to do for India’s fish sector what AMUL did for milk—strengthening
+              nutritional security by making affordable, high-quality fish accessible at scale.&rdquo;
             </blockquote>
 
-            <div className="mt-10 pt-6 border-t border-[var(--border-hairline)] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+            <div className="mt-8 pt-6 border-t border-[var(--border-hairline)] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
               <p className="text-supporting text-sm sm:text-base text-pipra-silt max-w-xl">
                 Fish is Pipra’s first vehicle for exploring how traditional food
                 knowledge can travel.

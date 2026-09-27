@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 const NAV_LINKS = [
   { label: "Thesis", href: "#thesis" },
@@ -38,12 +39,20 @@ export default function Header() {
     <header className="sticky top-0 z-40 w-full bg-pipra-paper border-b border-[var(--border-hairline)] transition-editorial">
       <div className="container-pipra">
         <div className="flex h-16 sm:h-20 items-center justify-between gap-6">
-          {/* Wordmark */}
+          {/* Primary Header Logo */}
           <a
             href="#hero"
-            className="font-serif text-xl sm:text-2xl tracking-[0.16em] font-medium text-pipra-charcoal hover:text-pipra-terracotta transition-editorial focus-visible:outline-2 focus-visible:outline-pipra-terracotta"
+            className="flex items-center group focus-visible:outline-2 focus-visible:outline-pipra-terracotta rounded-xs"
+            aria-label="Pipra - Return to top"
           >
-            PIPRA
+            <Image
+              src="/images/logo.jpeg"
+              alt="Pipra Official Logo"
+              width={56}
+              height={56}
+              priority
+              className="w-11 h-11 sm:w-14 sm:h-14 object-contain mix-blend-multiply transition-editorial group-hover:opacity-90"
+            />
           </a>
 
           {/* Desktop Navigation Links */}
@@ -112,6 +121,16 @@ export default function Header() {
           id="mobile-navigation"
           className="fixed inset-x-0 top-[65px] sm:top-[81px] bottom-0 bg-pipra-paper z-50 flex flex-col px-6 py-8 border-t border-[var(--border-hairline)] overflow-y-auto md:hidden"
         >
+          <div className="flex items-center pb-6 mb-4 border-b border-[var(--border-hairline)]">
+            <Image
+              src="/images/logo.jpeg"
+              alt="Pipra Official Logo"
+              width={48}
+              height={48}
+              className="w-12 h-12 object-contain mix-blend-multiply"
+            />
+          </div>
+
           <nav className="flex flex-col gap-6" aria-label="Mobile Navigation">
             {NAV_LINKS.map((link) => (
               <a

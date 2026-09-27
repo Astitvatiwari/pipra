@@ -55,39 +55,25 @@ export default function OriginSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           {/* Left Column: Paced Narrative Arc (7 cols) */}
           <div className="lg:col-span-7 flex flex-col gap-10">
-            {/* Movement 1: The Memory of Distance */}
-            <div className="space-y-4">
+            {/* Movement 1 & 2: Memory, Return, and The Core Inquiry */}
+            <div className="space-y-6">
               <span className="font-mono text-[11px] uppercase tracking-widest text-pipra-terracotta block">
-                Part I // The Taste in Exile
-              </span>
-              <p className="font-sans text-pipra-silt text-lg sm:text-xl leading-relaxed reading-width">
-                For more than two decades, Sanjeev Kumar lived in the United States.
-                Yet one taste remained difficult to find: his mother’s mustard fish.
-              </p>
-            </div>
-
-            {/* Movement 2: The Return & The Core Question */}
-            <div className="space-y-5 pt-8 border-t border-[var(--border-hairline)]">
-              <span className="font-mono text-[11px] uppercase tracking-widest text-pipra-terracotta block">
-                Part II // The Return
+                The Narrative // Memory &amp; Return
               </span>
               <p className="font-sans text-pipra-silt text-base sm:text-lg leading-relaxed reading-width">
-                In 2022, after roughly twenty-three years away, he returned to India
-                and ate the mustard fish his family had made for years.
+                After roughly twenty-three years in the United States, founder Sanjeev Kumar returned
+                to India in 2022. One taste had proved impossible to find abroad: his mother’s mustard fish.
               </p>
 
               <div className="p-6 sm:p-8 bg-pipra-limestone/30 border-l-2 border-pipra-charcoal my-4">
                 <p className="font-serif italic text-xl sm:text-2xl text-pipra-charcoal leading-snug">
-                  The experience raised a larger question: what exactly was missing when a
-                  traditional Indian food could not travel with the people who remembered it?
+                  What is missing when a traditional Indian food cannot travel with the people who remember it?
                 </p>
               </div>
 
               <p className="font-sans text-pipra-silt text-base sm:text-lg leading-relaxed reading-width">
-                That question led toward a larger inquiry—not simply how to
-                preserve recipes, but how to build the infrastructure around them
-                so that traditional knowledge can become accessible, trusted,
-                desirable, and economically valuable.
+                The answer was not simply recipe preservation, but infrastructure: the systems and
+                standards that allow culinary inheritance to become trusted, desirable, and economically valuable.
               </p>
             </div>
 
@@ -124,9 +110,7 @@ export default function OriginSection() {
                 <span>The Question of Place</span>
               </div>
               <p className="font-serif text-xl sm:text-2xl text-pipra-charcoal leading-relaxed">
-                Bihar contains extraordinary cultural and human wealth, yet persistent
-                poverty and limited opportunity remain. What does Bihar already
-                possess that the world might value if the right infrastructure were built around it?
+                Bihar possesses deep cultural wealth alongside persistent economic challenges. What does the region already hold that the world would value if the right infrastructure existed?
               </p>
             </div>
 
@@ -170,11 +154,11 @@ export default function OriginSection() {
                   <span>01 // Regional Demand</span>
                   <span className="text-pipra-silt">Recipe → Scale</span>
                 </div>
-                <h4 className="font-serif text-xl sm:text-2xl text-pipra-charcoal font-normal mb-3">
+                <h4 className="font-serif text-xl sm:text-2xl text-pipra-charcoal font-normal mb-2">
                   Champaran Meat
                 </h4>
                 <p className="font-sans text-pipra-silt text-sm leading-relaxed">
-                  An example of how a recipe can create demand and economic infrastructure.
+                  How a regional preparation creates spontaneous demand and rural economic infrastructure.
                 </p>
               </div>
 
@@ -184,11 +168,11 @@ export default function OriginSection() {
                   <span>02 // Cultural Material</span>
                   <span className="text-pipra-silt">Local → Global</span>
                 </div>
-                <h4 className="font-serif text-xl sm:text-2xl text-pipra-charcoal font-normal mb-3">
+                <h4 className="font-serif text-xl sm:text-2xl text-pipra-charcoal font-normal mb-2">
                   Magatte Wade &amp; Hibiscus
                 </h4>
                 <p className="font-sans text-pipra-silt text-sm leading-relaxed">
-                  An example of local cultural material becoming a globally relevant product.
+                  Transforming local botanical heritage into a globally valued brand.
                 </p>
               </div>
 
@@ -198,13 +182,11 @@ export default function OriginSection() {
                   <span>03 // Systemic Infrastructure</span>
                   <span className="text-pipra-silt">Process → Trust</span>
                 </div>
-                <h4 className="font-serif text-xl sm:text-2xl text-pipra-charcoal font-normal mb-3">
+                <h4 className="font-serif text-xl sm:text-2xl text-pipra-charcoal font-normal mb-2">
                   Starbucks in Seattle
                 </h4>
                 <p className="font-sans text-pipra-silt text-sm leading-relaxed">
-                  An example of how infrastructure around an ordinary product can
-                  include supply chains, training, quality, space, design, trust,
-                  experience, and replication.
+                  Building global trust around an everyday commodity through consistent supply chains, quality, and experience.
                 </p>
               </div>
             </div>

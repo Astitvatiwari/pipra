@@ -23,9 +23,8 @@ export default function SymbolsSection() {
           </h2>
 
           <p className="font-sans text-pipra-silt mt-8 text-lg sm:text-xl leading-relaxed max-w-3xl">
-            Pipra draws from two symbols: the Peepul and the tortoise. One
-            suggests rootedness and outward growth; the other suggests
-            withdrawal and inward reflection.
+            Pipra draws from two symbols: the Peepul and the tortoise—balancing
+            rooted outward growth with disciplined inward reflection.
           </p>
         </div>
 
@@ -45,8 +44,9 @@ export default function SymbolsSection() {
 
               <div className="space-y-5">
                 <p className="font-sans text-pipra-silt text-base sm:text-lg leading-relaxed">
-                  The Peepul is rooted in place, yet its branches spread outward.
-                  It evokes shade, conversation, gathering, and inquiry.
+                  The Peepul is rooted in place while its canopy reaches outward,
+                  evoking shade, gathering, and inquiry. It reminds us that durable
+                  systems begin somewhere specific before extending across the world.
                 </p>
 
                 {/* Botanical Documentary Archival Plate */}
@@ -68,12 +68,6 @@ export default function SymbolsSection() {
                     </div>
                   </figure>
                 </div>
-
-                <p className="font-serif italic text-lg sm:text-xl text-pipra-charcoal leading-relaxed font-normal pt-1">
-                  For Pipra, it is a reminder that meaningful systems begin
-                  somewhere specific before reaching beyond their place of
-                  origin.
-                </p>
               </div>
             </div>
 
@@ -96,24 +90,20 @@ export default function SymbolsSection() {
 
               <div className="space-y-5">
                 <p className="font-sans text-pipra-silt text-base sm:text-lg leading-relaxed">
-                  The tortoise suggests withdrawal and inward reflection. It
-                  represents the movement inward before moving outward again.
+                  The tortoise represents inward reflection before moving outward—returning
+                  to foundational principles before building anew. Tradition is not a static
+                  endpoint, but the starting point for inquiry.
                 </p>
 
                 {/* Contemplative Architectural Inward Marker */}
                 <div className="my-6 p-6 sm:p-8 bg-pipra-paper/70 border border-[var(--border-hairline)] rounded-xs border-l-2 border-l-pipra-charcoal">
                   <span className="font-mono text-[10px] uppercase tracking-widest text-pipra-terracotta block mb-2">
-                    Inward Disciplines
+                    Inward Discipline
                   </span>
                   <p className="font-serif italic text-base sm:text-lg text-pipra-charcoal leading-snug">
-                    To withdraw is not to retreat from reality, but to return to principles before building outward.
+                    Returning to core principles before building outward.
                   </p>
                 </div>
-
-                <p className="font-serif italic text-lg sm:text-xl text-pipra-charcoal leading-relaxed font-normal pt-1">
-                  For Pipra, tradition is not a fixed endpoint. It is a starting
-                  point for inquiry.
-                </p>
               </div>
             </div>
 

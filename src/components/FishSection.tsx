@@ -44,13 +44,12 @@ export default function FishSection() {
 
           <div className="mt-8 pt-8 border-t border-white/10">
             <p className="font-serif italic text-2xl sm:text-3xl text-amber-100/90 leading-snug">
-              Fish is not the final destination. It is the first vehicle.
+              Fish is not the final destination—it is a bounded learning system.
             </p>
 
             <p className="font-sans text-[#E0DDD5] mt-4 text-base sm:text-lg md:text-xl leading-relaxed max-w-3xl">
-              Fish is our first vehicle for exploring how traditional Indian food
-              knowledge can become globally accessible, trusted, desirable, and
-              economically valuable.
+              We begin here to explore how traditional food knowledge can become
+              globally accessible, trusted, and economically valuable.
             </p>
           </div>
         </div>
@@ -71,9 +70,8 @@ export default function FishSection() {
               </h3>
 
               <p className="font-sans text-[#E0DDD5] mt-4 text-sm sm:text-base leading-relaxed">
-                A fish associated with the Gangetic culinary landscape and a
-                traditional mustard-based preparation. Bachwa is the first hero of
-                Pipra Fish.
+                A freshwater fish of the Gangetic culinary landscape and a
+                traditional mustard-based preparation—the first hero of Pipra Fish.
               </p>
             </div>
 
@@ -87,9 +85,8 @@ export default function FishSection() {
                 understandable and inviting to someone encountering it for the first time?&rdquo;
               </blockquote>
               <p className="font-sans text-[#D1CEC7] mt-4 text-sm leading-relaxed border-t border-white/10 pt-4">
-                Fish allows us to explore how traditional recipes can travel while
-                remaining rooted in the people, places, techniques, and knowledge
-                from which they come.
+                Exploring how recipes can travel without losing the people, techniques,
+                and knowledge that define them.
               </p>
             </div>
           </div>

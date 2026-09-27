@@ -32,9 +32,8 @@ export default function EcosystemSection() {
           <div className="mt-10 sm:mt-12 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
             <div className="lg:col-span-7">
               <p className="font-sans text-pipra-silt text-lg sm:text-xl leading-relaxed reading-width">
-                Pipra explores the connections that allow traditional food
-                knowledge to move through an ecosystem: from producers and cooks
-                to entrepreneurs, customers, researchers, and wider audiences.
+                The relationships that allow regional food traditions to move from
+                producers and cooks to entrepreneurs, customers, and the wider world.
               </p>
             </div>
 
@@ -167,7 +166,7 @@ export default function EcosystemSection() {
               </div>
 
               <p className="font-sans text-[#E0DDD5] text-sm sm:text-base max-w-md leading-relaxed">
-                The ultimate test of infrastructure: allowing regional tradition to reach the world without losing the knowledge that gives it meaning.
+                Allowing regional tradition to reach the world without losing the knowledge that gives it meaning.
               </p>
             </div>
           </div>

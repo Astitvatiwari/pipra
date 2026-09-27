@@ -57,10 +57,9 @@ export default function Hero() {
             </p>
 
             <p className="font-sans text-[#D8D5CC] mt-4 text-base sm:text-lg md:text-xl leading-relaxed">
-              India does not lack recipes. India lacks the infrastructure that
-              allows recipes to travel. Pipra is exploring how traditional Indian
-              food knowledge can become globally accessible, trusted, desirable,
-              and economically valuable.
+              India has rich traditional recipes, but lacks the infrastructure that
+              allows them to travel globally while remaining trusted, desirable, and
+              economically valuable.
             </p>
           </div>
 
