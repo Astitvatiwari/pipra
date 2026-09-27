@@ -5,86 +5,90 @@ export default function Hero() {
     <section
       id="hero"
       aria-label="Master Brand Introduction"
-      className="section-spacing pt-12 md:pt-20 lg:pt-28"
+      className="relative w-full bg-[#121615] text-[#F7F5F0] overflow-hidden border-b border-white/10"
     >
-      <div className="container-pipra">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 xl:gap-16 items-start">
-          {/* Left Column: Textual Authority (approx 58%) */}
-          <div className="lg:col-span-7 flex flex-col justify-center">
-            {/* Eyebrow Context */}
-            <div className="mb-6 flex items-center gap-3">
-              <span className="w-1.5 h-1.5 rounded-full bg-pipra-terracotta" />
-              <p className="text-eyebrow">PIPRA</p>
-            </div>
+      {/* Background Photographic Canvas - Ganges River Sunrise */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/images/pipra-ganges-boats-sunrise.jpg"
+          alt="Traditional wooden riverboats at sunrise on the Ganges River, Varanasi"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-[72%_center] lg:object-[65%_center] opacity-45 lg:opacity-75 select-none"
+        />
 
-            {/* Primary Headline */}
-            <h1 className="text-display text-4xl sm:text-5xl md:text-6xl xl:text-7xl text-pipra-charcoal">
-              Building better food systems for a better-nourished India.
-            </h1>
+        {/* Directional Cinematic Vignettes for Flawless Text Legibility */}
+        {/* Left-to-right gradient ensuring WCAG AAA dark background behind typography */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#121615] via-[#121615]/95 sm:via-[#121615]/85 lg:via-[#121615]/75 to-transparent" />
+        {/* Vertical gradient protecting top masthead and anchoring the bottom */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#121615] via-transparent to-black/40" />
+      </div>
 
-            {/* Secondary Supporting Statement */}
-            <div className="mt-8 pt-8 border-hairline-t">
-              <p className="font-serif italic text-xl sm:text-2xl text-pipra-charcoal">
-                Rooted in India. Built for the world.
-              </p>
-
-              <p className="text-body text-pipra-silt mt-4 reading-width text-base sm:text-lg">
-                India does not lack recipes. India lacks the infrastructure that
-                allows recipes to travel. Pipra is exploring how traditional Indian
-                food knowledge can become globally accessible, trusted, desirable,
-                and economically valuable.
-              </p>
-            </div>
-
-            {/* Actions */}
-            <div className="mt-10 flex flex-wrap items-center gap-4">
-              <a
-                href="#thesis"
-                className="btn-pipra-primary text-xs uppercase tracking-[0.14em]"
-              >
-                Explore Pipra
-              </a>
-              <a
-                href="#origin"
-                className="btn-pipra-outline text-xs uppercase tracking-[0.14em]"
-              >
-                Our Story
-              </a>
-            </div>
+      {/* Foreground Brand Narrative */}
+      <div className="relative z-10 container-pipra flex flex-col justify-between min-h-[calc(100vh-4rem)] sm:min-h-[calc(100vh-5rem)] py-12 sm:py-16 lg:py-24">
+        {/* Top Archival Metadata Rail */}
+        <div className="flex flex-wrap items-center justify-between gap-4 border-b border-white/15 pb-4 mb-8 sm:mb-12">
+          <div className="flex items-center gap-3">
+            <span className="w-2 h-2 rounded-full bg-pipra-amber animate-pulse" />
+            <span className="font-mono text-xs uppercase tracking-[0.24em] text-pipra-amber font-medium">
+              PIPRA
+            </span>
           </div>
 
-          {/* Right Column: Cinematic Documentary Visual (approx 42%) */}
-          <div className="lg:col-span-5 w-full">
-            <figure
-              className="relative w-full aspect-[4/5] sm:aspect-[16/10] lg:aspect-[4/5] overflow-hidden rounded-xs border border-[var(--border-hairline)] bg-pipra-limestone"
-              aria-label="Documentary photograph of traditional riverboats at sunrise on the Ganges"
+          <div className="flex items-center gap-4 font-mono text-[10px] sm:text-[11px] uppercase tracking-widest text-white/60">
+            <span>Rooted in India</span>
+            <span className="text-white/30">•</span>
+            <span>Built for the World</span>
+          </div>
+        </div>
+
+        {/* Center / Dominant Editorial Statement */}
+        <div className="max-w-4xl my-auto">
+          {/* Primary Cinematic Headline */}
+          <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-[4.5rem] xl:text-[5.25rem] text-[#F7F5F0] font-normal leading-[1.06] tracking-tight">
+            Building better food systems for a better-nourished India.
+          </h1>
+
+          {/* Secondary Statement & Thesis Excerpt */}
+          <div className="mt-8 sm:mt-10 pt-8 border-t border-white/15 max-w-3xl">
+            <p className="font-serif italic text-2xl sm:text-3xl text-amber-100/95 leading-snug">
+              Rooted in India. Built for the world.
+            </p>
+
+            <p className="font-sans text-[#D8D5CC] mt-4 text-base sm:text-lg md:text-xl leading-relaxed">
+              India does not lack recipes. India lacks the infrastructure that
+              allows recipes to travel. Pipra is exploring how traditional Indian
+              food knowledge can become globally accessible, trusted, desirable,
+              and economically valuable.
+            </p>
+          </div>
+
+          {/* Action CTAs */}
+          <div className="mt-10 sm:mt-12 flex flex-wrap items-center gap-4 sm:gap-6">
+            <a
+              href="#thesis"
+              className="inline-flex items-center justify-center px-7 py-3.5 bg-[#F7F5F0] text-[#121615] font-sans text-xs uppercase tracking-[0.16em] font-medium rounded-xs hover:bg-pipra-amber hover:text-white transition-editorial shadow-sm"
             >
-              <Image
-                src="/images/pipra-ganges-boats-sunrise.jpg"
-                alt="Traditional wooden riverboats at sunrise on the Ganges River"
-                fill
-                priority
-                sizes="(max-width: 1024px) 100vw, 42vw"
-                className="object-cover object-center"
-              />
+              Explore Pipra
+            </a>
+            <a
+              href="#origin"
+              className="inline-flex items-center justify-center px-7 py-3.5 border border-white/30 text-[#F7F5F0] font-sans text-xs uppercase tracking-[0.16em] font-medium rounded-xs hover:border-white hover:bg-white/10 transition-editorial"
+            >
+              Our Story
+            </a>
+          </div>
+        </div>
 
-              {/* Archival Inset Header */}
-              <div className="absolute top-0 inset-x-0 p-4 bg-gradient-to-b from-black/50 via-black/15 to-transparent flex items-center justify-between text-[11px] font-mono tracking-widest text-white/95">
-                <span>01 // ARCHIVE</span>
-                <span>RIVERINE ECOLOGY</span>
-              </div>
-
-              {/* Archival Bottom Badge */}
-              <div className="absolute bottom-0 inset-x-0 p-4 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex items-end justify-between font-mono text-[10px] text-white/90 uppercase tracking-widest">
-                <span>Ganges Riverfront</span>
-                <span className="text-amber-200/90">Photo: Schwiki / CC BY-SA 4.0</span>
-              </div>
-            </figure>
-
-            <figcaption className="mt-3 flex items-center justify-between font-mono text-[11px] text-pipra-silt uppercase tracking-wider">
-              <span>Origin Landscape</span>
-              <span className="text-pipra-terracotta">Plates & Rivers</span>
-            </figcaption>
+        {/* Bottom Documentary Attribution Ledger */}
+        <div className="mt-12 sm:mt-16 pt-6 border-t border-white/15 flex flex-col sm:flex-row sm:items-center justify-between gap-2 font-mono text-[10px] sm:text-[11px] text-white/50 tracking-wider">
+          <div className="flex items-center gap-2">
+            <span className="w-1.5 h-1.5 rounded-full bg-white/40" />
+            <span>Documentary Record: Traditional riverboats at sunrise on the Ganges, Varanasi</span>
+          </div>
+          <div>
+            <span>Photo: Schwiki / CC BY-SA 4.0</span>
           </div>
         </div>
       </div>
