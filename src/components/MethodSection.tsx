@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const STAGES = [
   { step: "01", name: "Tradition" },
   { step: "02", name: "Inquiry" },
@@ -120,6 +122,32 @@ export default function MethodSection() {
               </div>
             ))}
           </div>
+        </div>
+
+        {/* Archival Documentary Plate: Regional Ingredients & Market Context */}
+        <div className="mt-12 sm:mt-16">
+          <figure
+            className="relative w-full aspect-[21/9] sm:aspect-[24/8] lg:aspect-[32/9] max-h-[340px] overflow-hidden rounded-xs border border-[var(--border-hairline)] bg-pipra-limestone/50"
+            aria-label="Documentary photograph of traditional spices in a market in Varanasi"
+          >
+            <Image
+              src="/images/pipra-varanasi-spices-market.jpg"
+              alt="Traditional Indian spices and ingredients in a market in Varanasi, Uttar Pradesh"
+              fill
+              sizes="(max-width: 1280px) 100vw, 1280px"
+              className="object-cover object-[center_35%] filter contrast-[1.03] brightness-[0.96] saturate-[0.90] sepia-[0.05]"
+            />
+            {/* Archival Inset Header */}
+            <div className="absolute top-0 inset-x-0 p-3 sm:p-4 bg-gradient-to-b from-black/60 via-black/20 to-transparent flex items-center justify-between text-[10px] sm:text-[11px] font-mono tracking-widest text-white/95">
+              <span>FIELD ARCHIVE // INGREDIENT INHERITANCE</span>
+              <span className="text-amber-200">VARANASI MARKET</span>
+            </div>
+            {/* Bottom Inset Tag */}
+            <div className="absolute bottom-0 inset-x-0 p-3 sm:p-4 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex items-end justify-between font-mono text-[9px] sm:text-[10px] text-white/90 uppercase tracking-widest">
+              <span>Ancestral Ingredients Awaiting Infrastructure to Travel</span>
+              <span className="text-white/70">Photo: Jorge Royan / CC BY-SA 3.0</span>
+            </div>
+          </figure>
         </div>
       </div>
     </section>

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function OriginSection() {
   return (
     <section
@@ -87,6 +89,32 @@ export default function OriginSection() {
                 so that traditional knowledge can become accessible, trusted,
                 desirable, and economically valuable.
               </p>
+            </div>
+
+            {/* Archival Landscape Plate: Agricultural Mustard Field */}
+            <div className="my-2">
+              <figure
+                className="relative w-full aspect-[16/9] sm:aspect-[21/10] overflow-hidden rounded-xs border border-[var(--border-hairline)] bg-pipra-limestone/40 shadow-sm"
+                aria-label="Documentary photograph of a blooming mustard field in rural eastern India"
+              >
+                <Image
+                  src="/images/pipra-mustard-field-landscape.jpg"
+                  alt="Blooming yellow mustard field in rural eastern India along the Gangetic plain"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 58vw"
+                  className="object-cover object-center filter saturate-[0.80] brightness-[0.92] contrast-[1.04] sepia-[0.08]"
+                />
+                {/* Archival Inset Header */}
+                <div className="absolute top-0 inset-x-0 p-3 sm:p-4 bg-gradient-to-b from-black/60 via-black/20 to-transparent flex items-center justify-between text-[10px] sm:text-[11px] font-mono tracking-widest text-white/95">
+                  <span>FIELD ARCHIVE // AGRICULTURAL COMMONS</span>
+                  <span className="text-amber-200">MUSTARD CULTIVATION</span>
+                </div>
+                {/* Bottom Inset Tag */}
+                <div className="absolute bottom-0 inset-x-0 p-3 sm:p-4 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex items-end justify-between font-mono text-[9px] sm:text-[10px] text-white/90 uppercase tracking-widest">
+                  <span>Rural Eastern India // Gangetic Basin</span>
+                  <span className="text-white/70">Photo: Pinakpani / CC BY-SA 4.0</span>
+                </div>
+              </figure>
             </div>
 
             {/* Movement 3: The Bihar Question */}

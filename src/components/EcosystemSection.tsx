@@ -1,9 +1,10 @@
-const ECOSYSTEM_PATHWAYS = [
-  { step: "01", from: "Fisher", to: "Chef", label: "Harvest to Kitchen" },
-  { step: "02", from: "Farmer", to: "Recipe", label: "Soil to Knowledge" },
-  { step: "03", from: "Recipe", to: "Entrepreneur", label: "Knowledge to Enterprise" },
-  { step: "04", from: "Entrepreneur", to: "Customer", label: "Enterprise to Market" },
-  { step: "05", from: "Local Tradition", to: "World", label: "Culmination" },
+import Image from "next/image";
+
+const CORE_PATHWAYS = [
+  { step: "01", from: "Fisher", to: "Chef", context: "Harvest to Kitchen" },
+  { step: "02", from: "Farmer", to: "Recipe", context: "Soil to Knowledge" },
+  { step: "03", from: "Recipe", to: "Entrepreneur", context: "Knowledge to Enterprise" },
+  { step: "04", from: "Entrepreneur", to: "Customer", context: "Enterprise to Market" },
 ];
 
 export default function EcosystemSection() {
@@ -50,8 +51,34 @@ export default function EcosystemSection() {
           </div>
         </div>
 
-        {/* Continuous Directional Ecosystem Flow Stream */}
-        <div className="mt-20 sm:mt-24">
+        {/* Substantial River Documentary Image: The Physical Foundation */}
+        <div className="mt-14 sm:mt-18 mb-12 sm:mb-16">
+          <figure
+            className="relative w-full aspect-[16/9] sm:aspect-[21/9] lg:aspect-[24/9] min-h-[300px] sm:min-h-[380px] lg:min-h-[420px] overflow-hidden rounded-xs border border-[var(--border-hairline)] bg-pipra-limestone/40 shadow-sm"
+            aria-label="Documentary record of fishermen on traditional boat casting nets on the Gomti River"
+          >
+            <Image
+              src="/images/pipra-river-fishermen-gomti.jpg"
+              alt="Fishermen in a traditional wooden boat casting nets on the Gomti River, a Ganges tributary"
+              fill
+              sizes="(max-width: 1280px) 100vw, 1280px"
+              className="object-cover object-[center_45%] filter contrast-[1.05] brightness-[0.96] sepia-[0.06] saturate-[0.92]"
+            />
+            {/* Top Inset */}
+            <div className="absolute top-0 inset-x-0 p-4 sm:p-5 bg-gradient-to-b from-black/60 via-black/20 to-transparent flex items-center justify-between text-[10px] sm:text-[11px] font-mono tracking-widest text-white/95">
+              <span>FIELD ARCHIVE // THE LIVING RIVERINE COMMONS</span>
+              <span className="text-amber-200">RIVER HARVEST</span>
+            </div>
+            {/* Bottom Inset */}
+            <div className="absolute bottom-0 inset-x-0 p-4 sm:p-5 bg-gradient-to-t from-black/75 via-black/25 to-transparent flex items-end justify-between font-mono text-[9px] sm:text-[10px] text-white/90 uppercase tracking-widest">
+              <span>Traditional Net Casting on the Gomti, Ganges Basin</span>
+              <span className="text-white/70">Photo: Alokksrs / CC BY-SA 4.0</span>
+            </div>
+          </figure>
+        </div>
+
+        {/* Five Pathway Architecture */}
+        <div>
           <div className="mb-6 flex flex-wrap items-center justify-between gap-4 border-b border-[var(--border-hairline)] pb-4">
             <span className="font-mono text-xs uppercase tracking-[0.2em] text-pipra-silt">
               Ecosystem Pathways of Traditional Knowledge &amp; Infrastructure
@@ -69,141 +96,80 @@ export default function EcosystemSection() {
             </div>
           </div>
 
-          {/* Desktop & Tablet: Flow Stream with Progressive Scale & Directional Momentum */}
-          <div className="hidden md:grid md:grid-cols-12 border-t border-b border-[var(--border-hairline)]">
-            {ECOSYSTEM_PATHWAYS.map((pathway, idx) => {
-              const isCulmination = idx === ECOSYSTEM_PATHWAYS.length - 1;
-
-              return (
-                <div
-                  key={pathway.step}
-                  className={`relative p-6 lg:p-7 flex flex-col justify-between transition-editorial ${
-                    isCulmination
-                      ? "md:col-span-4 bg-pipra-charcoal text-[#F7F5F0]"
-                      : "md:col-span-2 bg-transparent text-pipra-charcoal border-r border-[var(--border-hairline)] hover:bg-pipra-limestone/40"
-                  }`}
-                >
-                  {/* Top Step & Flow Tracker */}
-                  <div
-                    className={`flex items-center justify-between pb-3 mb-6 border-b ${
-                      isCulmination ? "border-white/20" : "border-[var(--border-hairline)]"
-                    }`}
+          {/* Pathways 01 - 04: Connected Architectural Sequence */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border-t border-b border-[var(--border-hairline)] divide-y sm:divide-y-0 sm:divide-x divide-[var(--border-hairline)]">
+            {CORE_PATHWAYS.map((pathway, idx) => (
+              <div
+                key={pathway.step}
+                className={`p-6 sm:p-8 lg:p-8 flex flex-col justify-between transition-editorial hover:bg-pipra-limestone/35 ${
+                  idx === 0 || idx === 1 ? "sm:border-b lg:border-b-0 border-[var(--border-hairline)]" : ""
+                }`}
+              >
+                {/* Pathway Step Header */}
+                <div className="flex items-center justify-between pb-3 mb-6 border-b border-[var(--border-hairline)]">
+                  <span className="font-mono text-xs tracking-widest uppercase text-pipra-terracotta font-medium">
+                    Pathway {pathway.step}
+                  </span>
+                  <span
+                    className="text-pipra-silt/40 font-mono text-sm hidden lg:inline"
+                    aria-hidden="true"
                   >
-                    <span
-                      className={`font-mono text-xs tracking-widest uppercase ${
-                        isCulmination ? "text-pipra-amber font-medium" : "text-pipra-terracotta"
-                      }`}
-                    >
-                      Pathway {pathway.step}
-                    </span>
-
-                    {isCulmination ? (
-                      <span className="font-mono text-[10px] uppercase tracking-widest text-[#F7F5F0] bg-white/10 px-2 py-0.5 rounded-xs">
-                        Final Horizon
-                      </span>
-                    ) : (
-                      <span
-                        className="text-pipra-silt/40 font-mono text-sm"
-                        aria-hidden="true"
-                      >
-                        →
-                      </span>
-                    )}
-                  </div>
-
-                  {/* Flow Relationship Typography */}
-                  <div className="my-auto py-2">
-                    <div
-                      className={`font-serif leading-tight ${
-                        isCulmination
-                          ? "text-3xl lg:text-[2.25rem] text-[#F7F5F0]"
-                          : "text-xl lg:text-2xl text-pipra-charcoal"
-                      }`}
-                    >
-                      <span className="block font-normal">{pathway.from}</span>
-                      <span
-                        className={`font-mono text-base inline-block my-2 ${
-                          isCulmination ? "text-pipra-amber" : "text-pipra-terracotta"
-                        }`}
-                        aria-hidden="true"
-                      >
-                        →
-                      </span>
-                      <span
-                        className={`block font-normal ${
-                          isCulmination ? "text-amber-100" : ""
-                        }`}
-                      >
-                        {pathway.to}
-                      </span>
-                    </div>
-                  </div>
-
-                  {/* Flow Bottom Marker */}
-                  <div
-                    className={`pt-4 mt-6 border-t font-mono text-[10px] uppercase tracking-wider ${
-                      isCulmination
-                        ? "border-white/20 text-white/60"
-                        : "border-[var(--border-hairline)] text-pipra-silt"
-                    }`}
-                  >
-                    {isCulmination ? "Global Table" : "System Node"}
-                  </div>
+                    →
+                  </span>
                 </div>
-              );
-            })}
-          </div>
 
-          {/* Mobile (< 768px): Vertical Continuous Flow Ribbon */}
-          <div className="md:hidden border-t border-b border-[var(--border-hairline)] divide-y divide-[var(--border-hairline)]">
-            {ECOSYSTEM_PATHWAYS.map((pathway, idx) => {
-              const isCulmination = idx === ECOSYSTEM_PATHWAYS.length - 1;
-
-              return (
-                <div
-                  key={pathway.step}
-                  className={`p-6 ${
-                    isCulmination
-                      ? "bg-pipra-charcoal text-[#F7F5F0]"
-                      : "bg-transparent text-pipra-charcoal"
-                  }`}
-                >
-                  <div className="flex items-center justify-between mb-3 font-mono text-xs uppercase tracking-widest">
+                {/* Relationship Typography */}
+                <div className="my-auto py-2">
+                  <div className="font-serif leading-tight text-2xl lg:text-[1.65rem] text-pipra-charcoal">
+                    <span className="block font-normal">{pathway.from}</span>
                     <span
-                      className={
-                        isCulmination ? "text-pipra-amber font-medium" : "text-pipra-terracotta"
-                      }
-                    >
-                      Pathway {pathway.step}
-                    </span>
-                    {isCulmination && (
-                      <span className="text-[10px] text-white/80 bg-white/10 px-2 py-0.5 rounded-xs">
-                        Culmination
-                      </span>
-                    )}
-                  </div>
-
-                  <div
-                    className={`font-serif text-2xl leading-snug flex items-center flex-wrap gap-2 ${
-                      isCulmination ? "text-[#F7F5F0]" : "text-pipra-charcoal"
-                    }`}
-                  >
-                    <span>{pathway.from}</span>
-                    <span
-                      className={`font-mono text-lg ${
-                        isCulmination ? "text-pipra-amber" : "text-pipra-terracotta"
-                      }`}
+                      className="font-mono text-base inline-block my-2.5 text-pipra-terracotta"
                       aria-hidden="true"
                     >
                       →
                     </span>
-                    <span className={isCulmination ? "text-amber-100" : ""}>
-                      {pathway.to}
-                    </span>
+                    <span className="block font-normal">{pathway.to}</span>
                   </div>
                 </div>
-              );
-            })}
+
+                {/* Context Marker */}
+                <div className="pt-4 mt-6 border-t border-[var(--border-hairline)] font-mono text-[10px] uppercase tracking-wider text-pipra-silt">
+                  {pathway.context}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Pathway 05: Dark Consequential Culmination Block */}
+          <div className="mt-8 p-8 sm:p-10 lg:p-12 bg-pipra-charcoal text-[#F7F5F0] border border-white/10 rounded-xs transition-editorial">
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 pb-6 mb-8 border-b border-white/15">
+              <div className="flex items-center gap-3">
+                <span className="w-2 h-2 rounded-full bg-pipra-amber" />
+                <span className="font-mono text-xs tracking-widest uppercase text-pipra-amber font-medium">
+                  Pathway 05 // Culmination
+                </span>
+              </div>
+              <span className="font-mono text-[11px] uppercase tracking-widest text-[#F7F5F0]/80 bg-white/10 px-3 py-1 rounded-xs self-start md:self-auto">
+                Final Horizon // Global Table
+              </span>
+            </div>
+
+            <div className="flex flex-col lg:flex-row lg:items-baseline justify-between gap-6">
+              <div className="font-serif text-3xl sm:text-4xl lg:text-[2.75rem] text-[#F7F5F0] leading-tight">
+                <span>Local Tradition</span>
+                <span
+                  className="font-mono text-2xl lg:text-3xl text-pipra-amber mx-3 inline-block"
+                  aria-hidden="true"
+                >
+                  →
+                </span>
+                <span className="text-amber-100">World</span>
+              </div>
+
+              <p className="font-sans text-[#E0DDD5] text-sm sm:text-base max-w-md leading-relaxed">
+                The ultimate test of infrastructure: allowing regional tradition to reach the world without losing the knowledge that gives it meaning.
+              </p>
+            </div>
           </div>
         </div>
       </div>
