@@ -42,16 +42,16 @@ export default function Header() {
           {/* Primary Header Logo */}
           <a
             href="#hero"
-            className="flex items-center group focus-visible:outline-2 focus-visible:outline-pipra-terracotta rounded-xs"
+            className="flex items-center h-full group focus-visible:outline-2 focus-visible:outline-pipra-terracotta rounded-xs"
             aria-label="Pipra - Return to top"
           >
             <Image
               src="/images/logo.jpeg"
               alt="Pipra Official Logo"
-              width={56}
-              height={56}
+              width={80}
+              height={80}
               priority
-              className="w-11 h-11 sm:w-14 sm:h-14 object-contain mix-blend-multiply transition-editorial group-hover:opacity-90"
+              className="h-full w-auto object-contain mix-blend-multiply transition-editorial group-hover:opacity-90"
             />
           </a>
 
