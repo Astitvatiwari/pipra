@@ -5,6 +5,7 @@ import MethodSection from "@/components/MethodSection";
 import FishSection from "@/components/FishSection";
 import EcosystemSection from "@/components/EcosystemSection";
 import OriginSection from "@/components/OriginSection";
+import FoundingTeamSection from "@/components/FoundingTeamSection";
 import SymbolsSection from "@/components/SymbolsSection";
 import DialogueSection from "@/components/DialogueSection";
 import Footer from "@/components/Footer";
@@ -20,6 +21,7 @@ export default function Home() {
         <FishSection />
         <EcosystemSection />
         <OriginSection />
+        <FoundingTeamSection />
         <SymbolsSection />
         <DialogueSection />
       </main>
